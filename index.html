@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Personal Portifolio - not official</title>
+        <!-- meta -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <style>
+        * {
+            margin:      0px;
+            padding:     0px;
+            box-sizing:  border-box;
+            font-family: sans-serif;
+        }
+
+        a {
+            color:           #888;
+            text-decoration: none;
+        }
+
+        body {
+            padding-top: 3rem; 
+        }
+
+        #navbar {
+            width:           100%;
+            height:          3rem;
+            top:             0px;
+            left:            0px;
+            position:        fixed;
+            padding:         12px;
+            display:         flex;
+            align-items:     center;
+            justify-content: space-around;
+            background:      #8a8;
+            a {
+                color: #fff;
+            }
+        }
+
+        #welcome-section {
+            width:      100%;
+            padding:    12px 0px;
+            text-align: center;
+        }
+
+        #projects {
+            width:          90%;
+            height:         360px;
+            /*max-width:      512px;*/
+            margin:         auto;
+            padding:        12px;
+            border:         1px solid #ccc;
+            border-radius:  4px;
+            display:        flex;
+            align-items:    center;
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 512px) {
+            #projects {
+                width: 512px;
+            }
+        }
+
+        .project-tile {
+            width:         100%;
+            height:        100%;
+            margin:        8px 0px;
+            background:    #ddd;
+            border-radius: 4px;
+        }
+
+        #profile-link {
+            color:           #55c;
+            width:           100%;
+            display:         flex;
+            padding:         12px;
+            font-size:       16pt;
+            justify-content: center;
+        }
+    </style>
+    <body>
+        <!-- navbar -->
+        <navbar id="navbar">
+        <a href="#welcome-section">welcome</a>
+        <a href="#projects">projects</a>
+        </navbar>
+        <!-- welcome -->
+        <section id="welcome-section">
+            <h1>Welcome!</h1>
+        </section>
+        <!-- projects -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-tile">
+            </div>
+            <a href="#">link</a>
+        </section>
+        <!-- profile -->
+        <a id="profile-link" target="_blank" href="https://www.github.com/Nathan2801">github</a>
+    </body>
+</html>
